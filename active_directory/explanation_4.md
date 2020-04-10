@@ -12,4 +12,4 @@ Write a function that provides an efficient look up of whether the user is in a 
 
 ## Solution
 
-The solution makes use of a Python set that allows the handling of duplicated users found in different groups. Adding to a set and finding if an item exists takes an average of O(1). The set requires O(n) for space complexity where n = number of unique entires
+The solution makes use of a Python set that allows the handling of duplicated users found in different groups. Adding to a set and finding if an item exists takes an average of O(1). But it takes O(n) the time complexity to construct the dictionary where n = total number of users found in all groups in the tree. The set requires O(n) for space complexity where n = number of unique entires
