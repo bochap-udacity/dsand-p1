@@ -25,4 +25,4 @@ Python version 3.6 and above
 
 ## Solution
 
-The implementation uses a Counter which is a subclass of dict to calculate the distinct instances of characters that is in the string. The time complexity of that is O(n) to iterate all the characters in the string. The counter keys are then sort in an operation which is O(nlogn). The construction of the tree involves using a heap to store the weight of each tree, each iteration requires O(logn) to get and insert the cheapest weight and there are O(n) iterations which makes the worst case O(nlogn)
+The implementation uses a Counter which is a subclass of dict to calculate the distinct instances of characters that is in the string. The time complexity of that is O(n) to iterate all the characters in the string. The counter keys are then sort in an operation which is O(nlogn). The construction of the tree involves using a heap to store the weight of each tree, each iteration requires O(logn) to get and insert the cheapest weight and there are O(n) iterations which makes the worst case O(nlogn). Space complexity is O(k) for the tree and O(n) for the decoded text.

@@ -33,4 +33,4 @@ Here is an example of a test directory listing,
 
 ## Solution
 
-The solution uses a set and makes use of recursion to check the paths. The recursion uses the call stack which is the equivalent or O(n) for each of the file or path in the system. It makes use of a set to keep track of the paths found and is O(1) on average and O(N) for the worst cast. At the end we perform a sort to get the result which is O(nlogn). So the worst case time complexity will be O(nlogn)
+The solution uses a set and makes use of recursion to check the paths. The recursion uses the call stack which is the equivalent or O(n) for each of the file or path in the system. It makes use of a set to keep track of the paths found and is O(1) on average and O(N) for the worst cast. At the end we perform a sort to get the result which is O(nlogn). So the worst case time complexity will be O(nlogn). The solution uses a set to store the list of unique paths. So the time complexity will be O(n) where n is the unique paths where the suffix is found.

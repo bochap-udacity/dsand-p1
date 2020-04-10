@@ -31,3 +31,7 @@ The solution uses 2 types of data structures to implement the LRU cache. They ar
 
 1. cache - This is a Python dict that stores the values by using a hash of the key supplied. This allows O(1) for searching, adding or deleting of the values by keys.
 2. tail, head - These are the references to the head and tail Nodes which is a doubly linked list that performs the behavior of a queue. The queue allows the First In First Out (FIFO), this allows us to add to the tail of the queue for the most currently access (get or set) node and remove the least recent access (get or set) node from the head of the queue in O(1). The queue is also implemented as a doubly linked list to allow accessing (get or set) a node in the middle of the queue to move the node to the tail in O(1).
+ 
+Space Complexity of this solution is O(N) where N is the maximum capacity of the cache.
+
+
