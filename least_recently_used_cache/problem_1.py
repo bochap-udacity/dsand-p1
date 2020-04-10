@@ -466,7 +466,7 @@ def test_lru_get_cache_missed():
     print(f"Cache hit value: {result}")
 
 
-def test_all():
+def test_lru_get_cache():
     test_lru_set_empty()
     print()
     test_lru_set_empty_with_get()
@@ -492,67 +492,4 @@ def test_all():
     test_lru_get_cache_missed()
 
 
-test_all()
-
-
-# our_cache = LRU_Cache(5)
-# print(str(our_cache))
-
-# our_cache.set(1, 1)
-# print(str(our_cache))
-
-# print(our_cache.get(1))  # return 1
-# print(str(our_cache))
-
-# our_cache.set(2, 2)
-# print(str(our_cache))
-
-# print(our_cache.get(1))  # return 1
-# print(str(our_cache))
-
-# our_cache.set(3, 3)
-# print(str(our_cache))
-# our_cache.set(4, 4)
-# print(str(our_cache))
-
-# print(our_cache.get(1))  # returns 1
-# print(str(our_cache))
-# print(our_cache.get(2))  # returns 2
-# print(str(our_cache))
-# print(our_cache.get(9))  # returns -1 because 9 is not present in the cache
-# print(str(our_cache))
-
-# our_cache.set(5, 5)
-# print(str(our_cache))
-# our_cache.set(6, 6)
-# print(str(our_cache))
-
-# print(our_cache.get(3))
-# print(str(our_cache))
-
-# our_cache.set(None, None)
-# print(str(our_cache))
-
-# our_cache.set(7, 7)
-# print(str(our_cache))
-
-# print(our_cache.get(None))  # returns None
-# print(str(our_cache))
-
-# print(our_cache.get(7))  # returns 7
-# print(str(our_cache))
-
-# print(our_cache.get(5))  # returns 5
-# print(str(our_cache))
-
-# print(our_cache.get(2))  # returns 2
-# print(str(our_cache))
-
-# print(our_cache.get(6))  # returns 6
-# print(str(our_cache))
-
-# print(our_cache.get(7))  # returns 7
-# print(str(our_cache))
-
-# our_cache.set(8, 8)
-# print(str(our_cache))
+test_lru_get_cache()

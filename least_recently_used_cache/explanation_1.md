@@ -21,6 +21,10 @@ All operations must take O(1) time.
 
 For the current problem, you can consider the size of cache = 5
 
+## Requirements
+
+Python version 3.6 and above
+
 ## Solution
 
 The solution uses 2 types of data structures to implement the LRU cache. They are stored as references in the class and contain other variables to provide efficient access
